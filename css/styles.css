@@ -1,0 +1,45 @@
+:root {
+    --oliva-1: #3d4f2f;
+    --oliva-2: #2e3c24;
+    --oliva-3: #1e2917;
+    --branco: #ffffff;
+    --cinza: #d0d0d0;
+}
+
+body{margin:0;font-family:"Segoe UI", Arial, sans-serif;color:#222;background:#f7f7f7}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Cabeçalho */
+.fa-header { width:100%; color:var(--branco); background:var(--oliva-1);}
+
+/* Barra superior */
+.fa-topbar { background: var(--oliva-2); padding:6px 0; font-size:13px; }
+.fa-toplinks { text-align:right; padding-right:20px; }
+.fa-toplinks a { color:var(--cinza); text-decoration:none; margin-left:12px; }
+
+/* Área principal */
+.fa-main { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; }
+.fa-logo { height:72px; object-fit:contain; }
+
+/* Título central */
+.fa-title { text-align:center; flex:1; }
+.fa-ministerio { display:block; font-size:14px; opacity:0.9; }
+.fa-title h1 { font-size:28px; margin:4px 0 2px; font-weight:800; line-height:1; }
+.fa-sub { display:block; font-size:15px; letter-spacing:0.6px; }
+
+/* Busca */
+.fa-search { display:flex; gap:6px; }
+.fa-search input { padding:8px 10px; border-radius:6px; border:none; }
+.fa-search button { padding:8px 10px; border-radius:6px; border:none; background:var(--oliva-3); color:white; }
+
+/* Menu inferior */
+.fa-menubar { background:var(--oliva-2); display:flex; justify-content:center; gap:14px; padding:8px 0; }
+.fa-menubar a { color:var(--branco); text-decoration:none; font-weight:600; }
+
+/* Responsividade simples */
+@media (max-width:800px){
+  .fa-main { flex-direction:column; gap:8px; text-align:center; }
+  .fa-logo{height:56px}
+  .fa-search{width:100%; justify-content:center}
+}
